@@ -1,0 +1,248 @@
+:root {
+  --main-color: #d3ad7f;
+  --black: #13131a;
+  --bg: #010103;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  font-size: 10px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+section {
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+body {
+  background-color: var(--bg);
+  
+}
+
+.nav-bar-container {
+  background-color: var(--bg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  border-bottom: var(--border);
+}
+.nav-bar-container section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-bar-container section .nav-bar a {
+  margin: 0 1rem;
+  font-size: 2rem;
+  color: #fff;
+
+  &:hover {
+    border-bottom: 2px solid #d3ad7f;
+    color: var(--main-color);
+    padding-bottom: 0.5rem;
+    font-size: 2.3rem;
+  }
+}
+.nav-bar-container section .icons img {
+  margin: 0 13px;
+  cursor: pointer;
+
+  &:hover {
+    width: 55px;
+    height: 55px;
+  }
+}
+.btn {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: inline-block;
+
+  &:hover{
+    letter-spacing: 0.04rem;
+  }
+}
+.home-container {
+  background-image: url(./img/home-img.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-container section {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+.home-container #home .contente {
+  max-width: 60rem;
+}
+h3 {
+  color: #fff;
+  font-size: 7rem;
+}
+
+p {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+.title {
+  color: var(--main-color);
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 4rem;
+  span {
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+.about .row {
+  display: flex;
+  align-items: center;
+  background-color: var(--black);
+  gap: 1.6rem;
+}
+.about .row .contente {
+  padding: 2rem;
+
+  h3 {
+    font-size: 3rem;
+    color: #fff;
+  }
+  p {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.8;
+  }
+}
+.menu .menu-container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 32% 32% 32%;
+
+}
+.menu .menu-container .card-menu{
+    border: var(--border);
+    text-align: center;
+    padding: 7rem;
+    box-shadow: rgba(74, 72, 72, 0.293) 0px 5px 15px;
+
+
+    &:hover{
+        background-color: rgb(255, 255, 255);
+        
+
+        h4{
+            color: #13131a;
+        }
+
+        .price{
+            color: #13131a;
+            span{
+                color: #13131a;
+            }
+        }
+    }
+
+    img{
+        margin-bottom: 2rem;
+    }
+
+    .price{
+        color: #fff;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+
+
+
+        span{
+            margin-left: 0.2rem;
+            font-size: small;
+            text-decoration: line-through;
+            color: #696969;
+        }
+
+    }
+    
+
+    h4{
+        color: #fff;
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+
+}
+.avaliacoes-box{
+}
+.avaliacoes .avaliacoes-box{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+}
+.avaliacoes .avaliacoes-box .avaliacoes-card{
+    border: var(--border);
+    text-align: center;
+    padding: 3rem;
+
+    .user{
+        border-radius: 50%;
+        width: 34%;
+    }
+
+    h4{
+        color: #fff;
+        font-size: 2.1rem;
+        margin: 2rem 0;
+    }
+    p{
+        margin-bottom: 2rem;
+    }
+}
+.endereco{
+  text-align: center;
+
+  .endereco-box iframe{
+    border-radius: 20px;
+    margin-bottom: 5rem;
+  }
+}
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: var(--border);
+  padding: 20px 0;
+}
+.icon-box-footer a{
+  color: #fff;
+  font-size: 50px;
+  margin: 0 4rem;
+
+
+
+
+
+  &:hover{
+    color: #d3ad7f;
+    font-size: 52px;
+  }
+}
